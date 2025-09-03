@@ -5,9 +5,9 @@ tags:
 - tag2
 ---
 <center>
-<font size= "6">(Your Name) Datasheet</font><br>
+<font size= "6">Donovan Calderon's Datasheet</font><br>
 as part of<br>
-<font size= "8"> Project Name</font><br>
+<font size= "8"> LAB</font><br>
 for<br>
 <font size= "5"> Team ### </font><br>
 
@@ -16,8 +16,7 @@ for<br>
 
 ## Introduction
 
-* This needs to be updated so that a reader gets an idea of the purpose of this datasheet.
-
+* To record entrys of data and with notes on how my contribution and perspective led to the completion regarding tasks and projects
 ### Project Summary
 
 * This needs to be updated to reflect <ins>your version</ins> of the team project, so when shared not via the team's report, the reader gets an idea of the direction of the project and how your work will contribute to the overall success.
