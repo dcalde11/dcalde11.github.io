@@ -6,7 +6,7 @@ tags:
 ---
 
 ## Overview
-The block diagram provides an overview of the system's key components (this case the light sensor), and their interactions. It illustrates how the power is distributed from the first board to the rest in the order dictated by team. The diagram also highlights team connections, showing how each subsystem integrates to ensure efficient communication and coordinated functionality across the project.
+The block diagram provides an overview of the system's key components (this case the light sensor), and their interactions. It illustrates how the power is distributed from the first board to the rest in the order dictated by team. The diagram highlights team connections, showing how each subsystem integrates to ensure efficient communication and coordinated functionality across the project.
 
 
 
