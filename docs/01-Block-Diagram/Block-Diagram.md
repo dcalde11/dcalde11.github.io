@@ -6,19 +6,11 @@ tags:
 ---
 
 ## Overview
-This needs to be updated with a brief purpose for having the block diagram.
-Things to mention are:
-* power levels
-* sensor
-* Actuator
-* team connections
-* Power source
-* ...
-
-To get some initial formatting help, one can view ["here"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/) some basic techniques.
+The block diagram provides an overview of the system's key components (this case the light sensor), and their interactions. It illustrates how the power is distributed from the first board to the rest in the order dictated by team. The diagram also highlights team connections, showing how each subsystem integrates to ensure efficient communication and coordinated functionality across the project.
 
 
-## Example Block Diagram 
-Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.
+
+
+
 
 <img width="491" height="451" alt="download" src="https://github.com/user-attachments/assets/9714ba75-f1e4-4813-8079-df15002d3256" />
