@@ -35,9 +35,9 @@ title: Component Selection Example
     | ----------------------------------------------------------------- | ------------------- |
     | Small and compact                                              | More expensive      |
     | High Reverse Voltage                                           | Slow shipping speed |
-    |                                                                | 	Sensitive to high temperatures    |
-    |                                                                | 	Amplifier needed   |
-    |                                                                | 	Surface Mount    |
+    |                                                                | Sensitive to high temperatures    |
+    |                                                                | Amplifier needed   |
+    |                                                                | Surface Mount    |
 
 
 
@@ -54,9 +54,9 @@ title: Component Selection Example
 
     | Pros                                                              | Cons                |
     | ----------------------------------------------------------------- | ------------------- |
-    | High Temperature                                               | 	Low Reverse voltage       |
-    | 	Accurate readings                                 | Slow shipping speed |
-    |                                                     | 	Tariff for shipping to US    |
+    | High Temperature                                               | 	Low Reverse voltage    |
+    | Accurate readings                                              | Slow shipping speed    |  
+    |                                                                | 	Tariff for shipping to US    |
     
 
 
@@ -83,10 +83,10 @@ title: Component Selection Example
 
     | Pros                                                              | Cons                |
     | ----------------------------------------------------------------- | ------------------- |
-    | 	Experienced                                              | 	Shipping     |
-    | 	Easy install      | 	Burnout |
-    | 	Cheap            | 		Fragile Pins    |
-     |          4 Circuits                     | 	    |
+    | 	Experienced       | 	Shipping     |
+    | 	Easy install      | 	Burnout   |
+    | 	Cheap             | 		Fragile Pins    |
+    |   4 Circuits         | 	    |
    
 
 
