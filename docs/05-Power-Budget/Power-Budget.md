@@ -21,4 +21,4 @@ From the prepare Power Budget, the items where choosen due to prior experince us
 
 ## Resouces
 
-The power budget as a PDF download is available [*here*](file:///C:/Users/caldd/Downloads/Power_Budget_2_embed.html), and a Microsoft Excel Sheet [*here*](https://arizonastateu-my.sharepoint.com/:x:/r/personal/dcalde11_sundevils_asu_edu/Documents/Power%20Budget%202.xlsx?d=w51b3c916be61441e824aff7a58e2db72&csf=1&web=1&e=zjarNc).
+The power budget as a PDF download is available [*here*](https://pdflink.to/4ed787cd/), and a Microsoft Excel Sheet [*here*](https://arizonastateu-my.sharepoint.com/:x:/r/personal/dcalde11_sundevils_asu_edu/Documents/Power%20Budget%202.xlsx?d=w51b3c916be61441e824aff7a58e2db72&csf=1&web=1&e=zjarNc).
