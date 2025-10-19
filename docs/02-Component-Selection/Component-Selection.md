@@ -2,57 +2,142 @@
 title: Component Selection Example
 ---
 
-## Examples
 
-### Style 1
-
-> This is the example found in the assignment, uses more html
-
-*Table 1: Example component selection*
-
-**External Clock Module**
-
-| **Solution**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| ![](image1.png)<br>Option 1.<br> XC1259TR-ND surface mount crystal<br>$1/each<br>[link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)                 | \* Inexpensive[^1]<br>\* Compatible with PSoC<br>\* Meets surface mount constraint of project                                               | \* Requires external components and support circuitry for interface<br>\* Needs special PCB layout. |
-| ![](image3.png)<br>\* Option 2. <br>\* CTX936TR-ND surface mount oscillator <br>\* $1/each <br>\* [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940) | \* Outputs a square wave <br>\* Stable over operating temperature <br> \* Direct interface with PSoC (no external circuitry required) range | * More expensive <br>\* Slow shipping speed                                                         |
-
-**Choice:** Option 2: CTX936TR-ND surface mount oscillator
-
-**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.
-
-### Style 2
 
 > Also acceptable, more markdown friendly
 
 **External Clock Module**
 
-1. XC1259TR-ND surface mount crystal
+1. PDV-P8103 CDS PHOTORESISTOR 16-33KOHM
 
-    ![](image1.png)
 
-    * $1/each
-    * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
+   <img width="251" height="136" alt="image" src="https://github.com/user-attachments/assets/62fbd04a-39f2-44e9-9d67-134f88270aad" />
+
+    * $0.70/each
+    * [link to product](https://www.digikey.com/en/products/detail/advanced-photonix/PDV-P8103/480610)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+    | Inexpensive                               | Slow shipping |
+    | Compatible with PSoC                      | •	$7.00 shipping fee                                        |
+    | Easy install                              |
 
-1. CTX936TR-ND surface mount oscillator
+2. VEMD2023X01 SENSOR PHOTODIODE 940NM 2SMD
 
-    ![](image3.png)
 
-    * $1/each
-    * [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940)
+    <img width="313" height="313" alt="image" src="https://github.com/user-attachments/assets/6389eb30-d382-4122-9df2-ca588d574e19" />
+
+
+    * $0.90/each
+    * [Link to product](https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/VEMD2023X01/4075873)
 
     | Pros                                                              | Cons                |
     | ----------------------------------------------------------------- | ------------------- |
-    | Outputs a square wave                                             | More expensive      |
-    | Stable over operating temperature                                 | Slow shipping speed |
-    | Direct interface with PSoC (no external circuitry required) range |
+    | Small and compact                                              | More expensive      |
+    | High Reverse Voltage                                 | Slow shipping speed |
+    |                                                     | 	Sensitive to high temperatures    |
+     |                                                     | 	Amplifier needed   |
+   |                                                     | 	Surface Mount    |
 
-**Choice:** Option 2: CTX936TR-ND surface mount oscillator
 
-**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.
+
+3. BPW34 SENSOR PHOTODIODE 850NM 2DIP
+
+
+
+    <img width="313" height="313" alt="image" src="https://github.com/user-attachments/assets/eb2f617b-c7af-4ef2-a1fd-09d9c7d412a3" />
+
+
+
+    * $1.14/each
+    * [Link to product](https://www.digikey.com/en/products/detail/ams-osram-usa-inc/BPW34/607274)
+
+    | Pros                                                              | Cons                |
+    | ----------------------------------------------------------------- | ------------------- |
+    | High Temperature                                               | 	Low Reverse voltage       |
+    | 	Accurate readings                                 | Slow shipping speed |
+    |                                                     | 	Tariff for shipping to US    |
+    
+
+
+
+   
+**Choice:** Option 1: PDV-P8103 CDS PHOTORESISTOR 16-33KOHM
+
+
+**Rationale:** Light sensor or Photodetector, which converts light energy into an electrical signa. This is important because we need to send a signal corresponding to the level of light present, in relation to lowering the blinds. An amplifier might be needed to send a stonger message to compenstate for the secondary motor when adjusting the level of blinds.
+
+
+
+
+1. MCP6004-I/P IC OPAMP GP 4 CIRCUIT 14DIP
+
+
+
+   <img width="221" height="221" alt="image" src="https://github.com/user-attachments/assets/fe37bf87-7fa8-4837-b103-025e68c92c05" />
+
+
+
+    * $0.59/each
+    * [Link to product](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060)
+
+    | Pros                                                              | Cons                |
+    | ----------------------------------------------------------------- | ------------------- |
+    | 	Experienced                                              | 	Shipping     |
+    | 	Easy install      | 	Burnout |
+    | 	Cheap            | 		Fragile Pins    |
+     |          4 Circuits                     | 	    |
+   
+
+
+
+
+2. MCP6004-E/P IC OPAMP GP 4 CIRCUIT 14DIP
+
+
+
+    <img width="313" height="313" alt="image" src="https://github.com/user-attachments/assets/35ca0cb8-7a3a-4ecb-9cbe-5bd8432063ee" />
+
+
+
+    * $0.65/each
+    * [Link to product](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-E-P/683200)
+
+    | Pros                                                              | Cons                |
+    | ----------------------------------------------------------------- | ------------------- |
+    | 	Identical to Previous                                              | 	Shipping      |
+    | 	Experienced                                | 	Burnout |
+    |   Easy install                                | 	Sensitive to high temperatures    |
+     |   	Cheap                                  | 	Fragile Pins  |
+
+
+
+
+
+
+
+3. LMC6484IN/NOPB IC CMOS 4 CIRCUIT 14DIP
+
+
+
+   <img width="255" height="255" alt="image" src="https://github.com/user-attachments/assets/02fe99d8-6997-441f-b7da-69f2c3fa6668" />
+
+
+    * $3.64/each
+    * [Link to product](https://www.digikey.com/en/products/detail/texas-instruments/LMC6484IN-NOPB/164521)
+
+    | Pros                                                              | Cons                |
+    | ----------------------------------------------------------------- | ------------------- |
+    | Small and compact                                 | More expensive      |
+    | 	Less Circuits                                 | Slow shipping speed |
+    |  Battery systems                              | 	       |
+    
+
+
+
+
+
+   
+**Choice:** 1. MCP6004-I/P IC OPAMP GP 4 CIRCUIT 14DIP
+
+**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This allows for amplifying the difference of input voltage created by the PDV-P8103 CDS PHOTORESISTOR 16-33KOHM. By amplifying the difference the pic can read the levels and once surpassing a threshold or certain levels it sets the blind to pre determined positions 
