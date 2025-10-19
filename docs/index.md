@@ -31,3 +31,5 @@ for<br>
 To review the details and relationships between the system’s components, refer to the [Block Diagram](https://dcalde11.github.io/01-Block-Diagram/Block-Diagram/) section of the datasheet.
 
 For all the sections
+[Component Selection](https://dcalde11.github.io/02-Component-Selection/Component-Selection/)
+[Power Budget](https://dcalde11.github.io/05-Power-Budget/Power-Budget/)
