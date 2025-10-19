@@ -75,19 +75,17 @@ title: Component Selection Example
 
 
 
-   <img width="221" height="221" alt="image" src="https://github.com/user-attachments/assets/fe37bf87-7fa8-4837-b103-025e68c92c05" />
+ <img width="221" height="221" alt="image" src="https://github.com/user-attachments/assets/fe37bf87-7fa8-4837-b103-025e68c92c05" />
 
+* $0.59/each  
+* [Link to product](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060)
 
-
-    * $0.59/each
-    * [Link to product](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060)
-
-    | Pros                                                              | Cons                |
-    | ----------------------------------------------------------------- | ------------------- |
-    | 	Experienced       | 	Shipping     |
-    | 	Easy install      | 	Burnout   |
-    | 	Cheap             | 		Fragile Pins    |
-    |   4 Circuits         | 	    |
+| Pros          | Cons          |
+|----------------|----------------|
+| Experienced    | Shipping       |
+| Easy install   | Burnout        |
+| Cheap          | Fragile pins   |
+| 4 Circuits     |                |
    
 
 
@@ -123,15 +121,14 @@ title: Component Selection Example
 
    <img width="255" height="255" alt="image" src="https://github.com/user-attachments/assets/02fe99d8-6997-441f-b7da-69f2c3fa6668" />
 
+* $3.64/each  
+* [Link to product](https://www.digikey.com/en/products/detail/texas-instruments/LMC6484IN-NOPB/164521)
 
-    * $3.64/each
-    * [Link to product](https://www.digikey.com/en/products/detail/texas-instruments/LMC6484IN-NOPB/164521)
-
-    | Pros                                                              | Cons                |
-    | ----------------------------------------------------------------- | ------------------- |
-    | Small and compact                                 | More expensive      |
-    | 	Less Circuits                                 | Slow shipping speed |
-    |  Battery systems                              | 	       |
+| Pros              | Cons               |
+|--------------------|--------------------|
+| Small and compact  | More expensive     |
+| Less circuits      | Slow shipping speed|
+| Battery systems    |                    |
     
 
 
