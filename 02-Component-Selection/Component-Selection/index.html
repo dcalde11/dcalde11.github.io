@@ -89,11 +89,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#examples" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -513,17 +508,6 @@
       
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Component Selection Example
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -533,56 +517,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Examples
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#style-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 1
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#style-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 2
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -808,47 +742,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Examples
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#style-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 1
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#style-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 2
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -872,48 +765,30 @@
 
   <h1>Component Selection Example</h1>
 
-<h2 id="examples">Examples</h2>
-<h3 id="style-1">Style 1</h3>
-<blockquote>
-<p>This is the example found in the assignment, uses more html</p>
-</blockquote>
-<p><em>Table 1: Example component selection</em></p>
-<p><strong>External Clock Module</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>Solution</strong></th>
-<th><strong>Pros</strong></th>
-<th><strong>Cons</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image1.png" data-desc-position="bottom"><img alt="" src="../image1.png"></a><br>Option 1.<br> XC1259TR-ND surface mount crystal<br>$1/each<br><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></td>
-<td>* Inexpensive[^1]<br>* Compatible with PSoC<br>* Meets surface mount constraint of project</td>
-<td>* Requires external components and support circuitry for interface<br>* Needs special PCB layout.</td>
-</tr>
-<tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image3.png" data-desc-position="bottom"><img alt="" src="../image3.png"></a><br>* Option 2. <br>* CTX936TR-ND surface mount oscillator <br>* $1/each <br>* <a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></td>
-<td>* Outputs a square wave <br>* Stable over operating temperature <br> * Direct interface with PSoC (no external circuitry required) range</td>
-<td>* More expensive <br>* Slow shipping speed</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
-<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
-<h3 id="style-2">Style 2</h3>
 <blockquote>
 <p>Also acceptable, more markdown friendly</p>
 </blockquote>
 <p><strong>External Clock Module</strong></p>
 <ol>
+<li>PDV-P8103 CDS PHOTORESISTOR 16-33KOHM</li>
+</ol>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://github.com/user-attachments/assets/62fbd04a-39f2-44e9-9d67-134f88270aad" data-desc-position="bottom"><img width="251" height="136" alt="image" src="https://github.com/user-attachments/assets/62fbd04a-39f2-44e9-9d67-134f88270aad"></a></p>
+<pre><code>* $0.70/each
+* [link to product](https://www.digikey.com/en/products/detail/advanced-photonix/PDV-P8103/480610)
+
+| Pros                                      | Cons                                                             |
+| ----------------------------------------- | ---------------------------------------------------------------- |
+| Inexpensive                               | Slow shipping |
+| Compatible with PSoC                      | • $7.00 shipping fee                                        |
+| Easy install                              |
+</code></pre>
+<ol>
 <li>
-<p>XC1259TR-ND surface mount crystal</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image1.png" data-desc-position="bottom"><img alt="" src="../image1.png"></a></p>
+<p>VEMD2023X01 SENSOR PHOTODIODE 940NM 2SMD</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://github.com/user-attachments/assets/6389eb30-d382-4122-9df2-ca588d574e19" data-desc-position="bottom"><img width="313" height="313" alt="image" src="https://github.com/user-attachments/assets/6389eb30-d382-4122-9df2-ca588d574e19"></a></p>
 <ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></li>
+<li>$0.90/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/VEMD2023X01/4075873">Link to product</a></li>
 </ul>
 <table>
 <thead>
@@ -924,26 +799,34 @@
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td>Small and compact</td>
+<td>More expensive</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
+<td>High Reverse Voltage</td>
+<td>Slow shipping speed</td>
 </tr>
 <tr>
-<td>Meets surface mount constraint of project</td>
 <td></td>
+<td>Sensitive to high temperatures</td>
+</tr>
+<tr>
+<td></td>
+<td>Amplifier needed</td>
+</tr>
+<tr>
+<td></td>
+<td>Surface Mount</td>
 </tr>
 </tbody>
 </table>
 </li>
 <li>
-<p>CTX936TR-ND surface mount oscillator</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image3.png" data-desc-position="bottom"><img alt="" src="../image3.png"></a></p>
+<p>BPW34 SENSOR PHOTODIODE 850NM 2DIP</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://github.com/user-attachments/assets/eb2f617b-c7af-4ef2-a1fd-09d9c7d412a3" data-desc-position="bottom"><img width="313" height="313" alt="image" src="https://github.com/user-attachments/assets/eb2f617b-c7af-4ef2-a1fd-09d9c7d412a3"></a></p>
 <ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></li>
+<li>$1.14/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/ams-osram-usa-inc/BPW34/607274">Link to product</a></li>
 </ul>
 <table>
 <thead>
@@ -954,23 +837,88 @@
 </thead>
 <tbody>
 <tr>
-<td>Outputs a square wave</td>
-<td>More expensive</td>
+<td>High Temperature</td>
+<td>Low Reverse voltage</td>
 </tr>
 <tr>
-<td>Stable over operating temperature</td>
+<td>Accurate readings</td>
 <td>Slow shipping speed</td>
 </tr>
 <tr>
-<td>Direct interface with PSoC (no external circuitry required) range</td>
 <td></td>
+<td>Tariff for shipping to US</td>
 </tr>
 </tbody>
 </table>
 </li>
 </ol>
-<p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
-<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
+<p><strong>Choice:</strong> Option 1: PDV-P8103 CDS PHOTORESISTOR 16-33KOHM</p>
+<p><strong>Rationale:</strong> Light sensor or Photodetector, which converts light energy into an electrical signa. This is important because we need to send a signal corresponding to the level of light present, in relation to lowering the blinds. An amplifier might be needed to send a stonger message to compenstate for the secondary motor when adjusting the level of blinds.</p>
+<ol>
+<li>MCP6004-I/P IC OPAMP GP 4 CIRCUIT 14DIP</li>
+</ol>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://github.com/user-attachments/assets/fe37bf87-7fa8-4837-b103-025e68c92c05" data-desc-position="bottom"><img width="221" height="221" alt="image" src="https://github.com/user-attachments/assets/fe37bf87-7fa8-4837-b103-025e68c92c05"></a></p>
+<pre><code>* $0.59/each
+* [Link to product](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060)
+
+| Pros                                                              | Cons                |
+| ----------------------------------------------------------------- | ------------------- |
+|   Experienced                                              |  Shipping     |
+|   Easy install      |     Burnout |
+|   Cheap            |      Fragile Pins    |
+ |          4 Circuits                     |        |
+</code></pre>
+<ol>
+<li>
+<p>MCP6004-E/P IC OPAMP GP 4 CIRCUIT 14DIP</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://github.com/user-attachments/assets/35ca0cb8-7a3a-4ecb-9cbe-5bd8432063ee" data-desc-position="bottom"><img width="313" height="313" alt="image" src="https://github.com/user-attachments/assets/35ca0cb8-7a3a-4ecb-9cbe-5bd8432063ee"></a></p>
+<ul>
+<li>$0.65/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-E-P/683200">Link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identical to Previous</td>
+<td>Shipping</td>
+</tr>
+<tr>
+<td>Experienced</td>
+<td>Burnout</td>
+</tr>
+<tr>
+<td>Easy install</td>
+<td>Sensitive to high temperatures</td>
+</tr>
+<tr>
+<td>Cheap</td>
+<td>Fragile Pins</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>LMC6484IN/NOPB IC CMOS 4 CIRCUIT 14DIP</p>
+</li>
+</ol>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://github.com/user-attachments/assets/02fe99d8-6997-441f-b7da-69f2c3fa6668" data-desc-position="bottom"><img width="255" height="255" alt="image" src="https://github.com/user-attachments/assets/02fe99d8-6997-441f-b7da-69f2c3fa6668"></a></p>
+<pre><code>* $3.64/each
+* [Link to product](https://www.digikey.com/en/products/detail/texas-instruments/LMC6484IN-NOPB/164521)
+
+| Pros                                                              | Cons                |
+| ----------------------------------------------------------------- | ------------------- |
+| Small and compact                                 | More expensive      |
+|   Less Circuits                                 | Slow shipping speed |
+|  Battery systems                              |          |
+</code></pre>
+<p><strong>Choice:</strong> 1. MCP6004-I/P IC OPAMP GP 4 CIRCUIT 14DIP</p>
+<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This allows for amplifying the difference of input voltage created by the PDV-P8103 CDS PHOTORESISTOR 16-33KOHM. By amplifying the difference the pic can read the levels and once surpassing a threshold or certain levels it sets the blind to pre determined positions </p>
 
 
 
