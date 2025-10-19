@@ -16,11 +16,11 @@ title: Component Selection Example
     * $0.70/each
     * [link to product](https://www.digikey.com/en/products/detail/advanced-photonix/PDV-P8103/480610)
 
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Slow shipping   |
-    | Compatible with PSoC                      | $7.00 shipping fee              |
-    | Easy install                              |                     |
+| Pros                  | Cons               |
+|------------------------|--------------------|
+| Inexpensive            | Slow shipping      |
+| Compatible with PSoC   | $7.08 shipping fee |
+| Easy install           |                    |
 
 2. VEMD2023X01 SENSOR PHOTODIODE 940NM 2SMD
 
