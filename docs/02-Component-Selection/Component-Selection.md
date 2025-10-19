@@ -19,7 +19,7 @@ title: Component Selection Example
 | Pros                  | Cons               |
 |------------------------|--------------------|
 | Inexpensive            | Slow shipping      |
-| Compatible with PSoC   | $7.08 shipping fee |
+| Compatible with PSoC   |       shipping fee |
 | Easy install           |                    |
 
 2. VEMD2023X01 SENSOR PHOTODIODE 940NM 2SMD
