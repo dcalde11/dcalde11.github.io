@@ -11,16 +11,17 @@ title: Component Selection Example
 1. PDV-P8103 CDS PHOTORESISTOR 16-33KOHM
 
 
-   <img width="251" height="136" alt="image" src="https://github.com/user-attachments/assets/62fbd04a-39f2-44e9-9d67-134f88270aad" />
+  <img width="251" height="136" alt="image" src="https://github.com/user-attachments/assets/62fbd04a-39f2-44e9-9d67-134f88270aad" />
 
-    * $0.70/each
-    * [link to product](https://www.digikey.com/en/products/detail/advanced-photonix/PDV-P8103/480610)
+* $0.70/each  
+* [link to product](https://www.digikey.com/en/products/detail/advanced-photonix/PDV-P8103/480610)
 
 | Pros                  | Cons               |
 |------------------------|--------------------|
 | Inexpensive            | Slow shipping      |
 | Compatible with PSoC   |       shipping fee |
 | Easy install           |                    |
+
 
 2. VEMD2023X01 SENSOR PHOTODIODE 940NM 2SMD
 
