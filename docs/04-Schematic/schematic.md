@@ -14,4 +14,4 @@ This schematic is design to support .... (highlight functionally, power, and con
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](http://digil.ink/l/3670yeZyXT), and the Zip folder of the project [*here*](dummyZip.zip).
+The schematic as a PDF download is available [*here*](http://digil.ink/l/3670yeZyXT), and the Zip folder of the project [*here*](https://github.com/dcalde11/dcalde11.github.io/blob/main/voltage_regulatorSubsection.zip).
