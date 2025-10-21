@@ -4,12 +4,12 @@ title: Schematic
 
 ## Overview
 
-This schematic is design to support .... (highlight functionally, power, and controller).
+This schematic is designed to support the overall functionality of the system by managing power distribution, signal sensing, and control operations. The photoresistor serves as a light sensor, detecting changes in ambient light intensity and converting them into varying voltage levels. These signals are read by the PIC18F57Q43 microcontroller, which processes the data to adjust the system’s response accordingly. The power section provides stable voltage regulation to ensure reliable operation of the sensor and controller circuits.
 
 
 <img width="1147" height="787" alt="image" src="https://github.com/user-attachments/assets/87f81830-9b93-4804-a4b5-c5c74cf4a186" />
 
-**Figure ##:** Showing a example schematic.
+**Figure 1: Shows Schematic
 
 
 ## Resouces
