@@ -3,7 +3,11 @@ title: Power Budget
 ---
 
 ## Overview
-Write a overview of what you did and why you did a Power Budget.
+For our Electric Blinds project, we created a power budget to understand and manage how much electrical power our system requires. The power budget helps ensure that all components, including the microcontroller, light sensor, and operational amplifier, receive adequate power without exceeding the system’s supply limits.
+
+By listing each component’s voltage and current requirements, we were able to calculate the total power needed for the system and confirm that our chosen power source and voltage regulators can handle the load safely. This step is essential for preventing power shortages, overheating, or component damage.
+
+Creating a detailed power budget also helps improve the efficiency and reliability of our design. It ensures the automatic blinds system operates smoothly as it detects light levels and adjusts to maintain indoor comfort—without wasting energy or overloading the circuit.
 
 > Capture your power budge as a image to display. Take time to get clean breaks and a well organized layout.
 
