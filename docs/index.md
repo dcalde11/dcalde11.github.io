@@ -19,8 +19,10 @@ for<br>
 * To record entrys of data and with notes on how my contribution and perspective led to the completion regarding tasks and projects
 ### Project Summary
 
-* This needs to be updated to reflect <ins>your version</ins> of the team project, so when shared not via the team's report, the reader gets an idea of the direction of the project and how your work will contribute to the overall success.
-* Add context that ties into the link to your [team report.](https://embedded-systems-design.github.io/EGR304TeamTemplate/)
+* The sensor’s readings are sent to a microcontroller or smart blind controller, which uses the light data (and possibly temperature data from other sensors) to decide whether to open or close the blinds. By monitoring the brightness of the room, the system automatically adjusts the blinds to maintain a balanced temperature—reducing the need for heating when it’s cool and sunny. This automation also removes the daily task of manually opening and closing the blinds to manage light and comfort.
+* [EGR304 Team 105 Report
+Product Requirements](https://egr304-2025-f-105.github.io/Team105.github.io/04-Product-Requirements/)
+* [EGR304 Team 105 User Needs and Benchmarking](https://egr304-2025-f-105.github.io/Team105.github.io/03-User-Needs-and%20Benchmarking/)
 
 
 ### My Contribution
