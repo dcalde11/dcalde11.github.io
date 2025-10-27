@@ -7,9 +7,9 @@ tags:
 <center>
 <font size= "6">Donovan Calderon's Datasheet</font><br>
 as part of<br>
-<font size= "8"> LAB</font><br>
+<font size= "8"> LAB Temperature Equalizing blinds</font><br>
 for<br>
-<font size= "5"> Team ### </font><br>
+<font size= "5"> Team 105 </font><br>
 
 **Submission: month, DD, YYYY**
 </center>
