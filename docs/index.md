@@ -16,10 +16,10 @@ for<br>
 
 ## Introduction
 
-* To record entrys of data and with notes on how my contribution and perspective led to the completion regarding tasks and projects
+* This section includes my notes and observations for the light sensor automation project. My main tasks involved wiring and testing the electrical components, ensuring proper connections and stable signal readings from the sensor. I also worked on improving how the system reacted to changes in light to maintain smooth and reliable operation. Overall, this record outlines my contributions to the electrical setup and performance that supported the successful completion of the project.
 ### Project Summary
 
-* The sensor’s readings are sent to a microcontroller or smart blind controller, which uses the light data (and possibly temperature data from other sensors) to decide whether to open or close the blinds. By monitoring the brightness of the room, the system automatically adjusts the blinds to maintain a balanced temperature—reducing the need for heating when it’s cool and sunny. This automation also removes the daily task of manually opening and closing the blinds to manage light and comfort.
+* The sensor detects the light intensity in the environment and sends its readings to a control system that determines the appropriate position of the blinds. Using light data—and, in some cases, additional input such as temperature readings—the system automatically opens or closes the blinds to maintain a comfortable indoor balance. By monitoring brightness levels throughout the day, it helps regulate room temperature, reducing the need for heating when sunlight is available. This automation also removes the need for manual adjustment, improving both energy efficiency and overall comfort.
 * [EGR304 Team 105 Report
 Product Requirements](https://egr304-2025-f-105.github.io/Team105.github.io/04-Product-Requirements/)
 * [EGR304 Team 105 User Needs and Benchmarking](https://egr304-2025-f-105.github.io/Team105.github.io/03-User-Needs-and%20Benchmarking/)
@@ -27,7 +27,7 @@ Product Requirements](https://egr304-2025-f-105.github.io/Team105.github.io/04-P
 
 ### My Contribution
 
-* This needs to be updated to reflect a team introduction
+We are a team of engineering students from Arizona State University dedicated to transforming innovative embedded system concepts into practical, market-ready solutions. Although our foundation is academic, we take a hands-on, startup-style approach—combining technical knowledge with creative and entrepreneurial thinking. Our current project, Temperature Equalizing Blinds, focuses on developing an automated blind system that adjusts to changing light levels to help maintain comfortable indoor temperatures and improve energy efficiency.
 * Content should also help an unfamiliar reader navigate to areas of interest. Information like:
 
 To review the details and relationships between the system’s components, refer to the [Block Diagram](https://dcalde11.github.io/01-Block-Diagram/Block-Diagram/) section of the datasheet.
