@@ -7,7 +7,8 @@ title: Schematic
 This schematic is designed to support the overall functionality of the system by managing power distribution, signal sensing, and control operations. The photoresistor serves as a light sensor, detecting changes in ambient light intensity and converting them into varying voltage levels. These signals are read by the PIC18F57Q43 microcontroller, which processes the data to adjust the system’s response accordingly. The power section provides stable voltage regulation to ensure reliable operation of the sensor and controller circuits.
 
 
-<img width="1262" height="860" alt="image" src="https://github.com/user-attachments/assets/ff052b91-0698-4d12-98f9-1728adf37550" />
+<img width="1060" height="737" alt="image" src="https://github.com/user-attachments/assets/71557747-f261-47f8-8f29-74600a345fdc" />
+
 
 
 **Figure 1: Shows Schematic
