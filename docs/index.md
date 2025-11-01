@@ -33,12 +33,11 @@ Product Requirements](https://egr304-2025-f-105.github.io/Team105.github.io/04-P
 * [EGR304 Team 105 User Needs and Benchmarking](https://egr304-2025-f-105.github.io/Team105.github.io/03-User-Needs-and%20Benchmarking/)
 
 Individual Contribution
-*To review the details and relationships between the system’s components, refer to the [Block Diagram](https://dcalde11.github.io/01-Block-Diagram/Block-Diagram/) section of the datasheet.
-
-*To review the system’s components, refer to the [Component Selection](https://dcalde11.github.io/02-Component-Selection/Component-Selection/)
-*To review power ditribution refer to the [Power Budget](https://dcalde11.github.io/05-Power-Budget/Power-Budget/)
-*To review the layout of the individual subsytem refer to [Schematic]
-*To review the cost of components of the subsystem refer to [Bill of Materials]
+* To review the details and relationships between the system’s components, refer to the [Block Diagram](https://dcalde11.github.io/01-Block-Diagram/Block-Diagram/) section of the datasheet.
+* To review the system’s components, refer to the [Component Selection](https://dcalde11.github.io/02-Component-Selection/Component-Selection/)
+* To review power ditribution refer to the [Power Budget](https://dcalde11.github.io/05-Power-Budget/Power-Budget/).
+* To review the layout of the individual subsytem refer to [Schematic](https://dcalde11.github.io/04-Schematic/schematic/).
+* To review the cost of components of the subsystem refer to [Bill of Materials](https://dcalde11.github.io/03-BOM/BOM/).
 
 
 
