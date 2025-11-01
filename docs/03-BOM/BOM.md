@@ -13,6 +13,6 @@ The Light Sensor Subsystem BOM lists all components required for prototyping and
 ## Bill of Materials Example (as Image)
 <img width="1661" height="352" alt="image" src="https://github.com/user-attachments/assets/506a36d9-b1d4-4686-8a38-cf1c1536c7b9" />
 
-**Figure 2:** Example Bill of Materials as a screenshot.
+**Figure 1:** Example Bill of Materials as a screenshot.
 
 
