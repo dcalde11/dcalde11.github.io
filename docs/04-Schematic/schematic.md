@@ -15,4 +15,4 @@ This schematic is designed to support the overall functionality of the system by
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](http://digil.ink/l/3670yeZyXT), and the Zip folder of the project [*here*](https://github.com/dcalde11/dcalde11.github.io/blob/main/voltage_regulatorSubsection.zip).
+The schematic as a PDF download is available [*here*](https://github.com/dcalde11/dcalde11.github.io/blob/main/docs/04-Schematic/voltage_regulator.pdf),  and the Zip folder of the project [*here*](https://github.com/dcalde11/dcalde11.github.io/blob/main/voltage_regulatorSubsection.zip).
