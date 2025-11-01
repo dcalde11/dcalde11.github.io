@@ -27,17 +27,17 @@ for<br>
 
 We are a team of engineering students from Arizona State University dedicated to turning embedded system ideas into practical, market-ready solutions. Our project, Temperature Equalizing Blinds, focuses on automating blind adjustments to improve comfort and energy efficiency. The section below highlights my individual role and contributions to the project’s development.
 
-Team Contribution
-* [EGR304 Team 105 Report
-Product Requirements](https://egr304-2025-f-105.github.io/Team105.github.io/04-Product-Requirements/)
-* [EGR304 Team 105 User Needs and Benchmarking](https://egr304-2025-f-105.github.io/Team105.github.io/03-User-Needs-and%20Benchmarking/)
+## Team Contribution
+* [EGR304 Team 105 Report – Product Requirements](https://egr304-2025-f-105.github.io/Team105.github.io/04-Product-Requirements/)
+* [EGR304 Team 105 – User Needs and Benchmarking](https://egr304-2025-f-105.github.io/Team105.github.io/03-User-Needs-and%20Benchmarking/)
 
-Individual Contribution
+
+## Individual Contribution
 * To review the details and relationships between the system’s components, refer to the [Block Diagram](https://dcalde11.github.io/01-Block-Diagram/Block-Diagram/) section of the datasheet.
-* To review the system’s components, refer to the [Component Selection](https://dcalde11.github.io/02-Component-Selection/Component-Selection/)
-* To review power ditribution refer to the [Power Budget](https://dcalde11.github.io/05-Power-Budget/Power-Budget/).
-* To review the layout of the individual subsytem refer to [Schematic](https://dcalde11.github.io/04-Schematic/schematic/).
-* To review the cost of components of the subsystem refer to [Bill of Materials](https://dcalde11.github.io/03-BOM/BOM/).
+* To review the system’s components, refer to the [Component Selection](https://dcalde11.github.io/02-Component-Selection/Component-Selection/).
+* To review power distribution, refer to the [Power Budget](https://dcalde11.github.io/05-Power-Budget/Power-Budget/).
+* To review the layout of the individual subsystem, refer to the [Schematic](https://dcalde11.github.io/04-Schematic/schematic/).
+* To review the cost of components in the subsystem, refer to the [Bill of Materials](https://dcalde11.github.io/03-BOM/BOM/).
 
 
 
