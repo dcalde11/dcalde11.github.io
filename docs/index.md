@@ -25,14 +25,28 @@ for<br>
 
 ### My Contribution
 
-We are a team of engineering students from Arizona State University dedicated to transforming innovative embedded system concepts into practical, market-ready solutions. Although our foundation is academic, we take a hands-on, startup-style approach—combining technical knowledge with creative and entrepreneurial thinking. Our current project, Temperature Equalizing Blinds, focuses on developing an automated blind system that adjusts to changing light levels to help maintain comfortable indoor temperatures and improve energy efficiency.
+We are a team of engineering students from Arizona State University dedicated to turning embedded system ideas into practical, market-ready solutions. Our project, Temperature Equalizing Blinds, focuses on automating blind adjustments to improve comfort and energy efficiency. The section below highlights my individual role and contributions to the project’s development.
 
-* Content should also help an unfamiliar reader navigate to areas of interest. Information like:
+Team Contribution
 * [EGR304 Team 105 Report
 Product Requirements](https://egr304-2025-f-105.github.io/Team105.github.io/04-Product-Requirements/)
 * [EGR304 Team 105 User Needs and Benchmarking](https://egr304-2025-f-105.github.io/Team105.github.io/03-User-Needs-and%20Benchmarking/)
-To review the details and relationships between the system’s components, refer to the [Block Diagram](https://dcalde11.github.io/01-Block-Diagram/Block-Diagram/) section of the datasheet.
 
-For all the sections
-[Component Selection](https://dcalde11.github.io/02-Component-Selection/Component-Selection/)
-[Power Budget](https://dcalde11.github.io/05-Power-Budget/Power-Budget/)
+Individual Contribution
+*To review the details and relationships between the system’s components, refer to the [Block Diagram](https://dcalde11.github.io/01-Block-Diagram/Block-Diagram/) section of the datasheet.
+
+*To review the system’s components, refer to the [Component Selection](https://dcalde11.github.io/02-Component-Selection/Component-Selection/)
+*To review power ditribution refer to the [Power Budget](https://dcalde11.github.io/05-Power-Budget/Power-Budget/)
+*To review the layout of the individual subsytem refer to [Schematic]
+*To review the cost of components of the subsystem refer to [Bill of Materials]
+
+
+
+
+
+
+
+
+
+
+
