@@ -1,3 +1,6 @@
+---
+title: PCB
+---
 ## OverView
 The PCB supports the system’s electronic functionality by hosting the primary components, routing power, and managing signal pathways. The front side contains the microcontroller, voltage regulation circuitry, connectors, and sensor interfaces, with copper traces distributing power and signals and silkscreen labels aiding assembly. The back side provides additional routing and grounding to reduce noise and maintain signal integrity, with minimal components to ensure clarity and reliable operation. Both layers work together to support stable power delivery, accurate signal processing, and overall system performance.
 ### Front PCB
