@@ -12,4 +12,4 @@ The PCB supports the system’s electronic functionality by hosting the primary 
 * The back side of the PCB provides supporting routing, ground planes, and additional electrical connections that enhance signal integrity and noise reduction. Minimal components are placed on this layer to maintain clarity and ensure reliable operation, with through-hole pads and vias connecting the circuitry between layers for stable system performance.
 <img width="1920" height="1080" alt="Back" src="https://github.com/user-attachments/assets/9e228959-4347-47fb-8582-286c9488c1fb" />
 
-The Front and the Back of the PCB as a PDF download is available [*here*](voltage_regulator.pdf),  and the Zip folder of the project [*here*](LightSensor.zip)
+The Front and the Back of the PCB as a PDF download is available here [*Back*](docs/06-PCB/Back.pdf),  and the Zip folder of the project [*here*](LightSensor.zip)
