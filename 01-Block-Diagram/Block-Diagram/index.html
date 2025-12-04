@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#system-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -506,17 +506,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Individal Block Diagram
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -527,32 +518,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -915,23 +880,8 @@
   
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -954,11 +904,32 @@
   
 
 
-  <h1>Individal Block Diagram</h1>
-
-<h2 id="overview">Overview</h2>
-<p>The block diagram provides an overview of the system’s key components—in this case, the light sensor—and how they interact. The sensor connects to pin RA0, which receives the light data from the photoresistor. The microcontroller then sends an inverting signal as confirmation that the system should activate, which is output through pin RA2 to control the rest of the system. A shared ground connection on pin 8 ensures all boards operate at the same reference point. The diagram also highlights how each subsystem integrates to maintain efficient communication and coordinated operation across the project.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://github.com/user-attachments/assets/12037738-6c1c-47c7-9294-eb1bcea0d234" data-desc-position="bottom"><img width="701" height="691" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/12037738-6c1c-47c7-9294-eb1bcea0d234"></a></p>
+<h1 id="system-overview">System Overview</h1>
+<p>This system provides a structured approach to sensing ambient light, conditioning the resulting analog signal, and processing it through an embedded microcontroller platform. The following sections (1–5) summarize each major subsystem, outlining the progression from power regulation to signal detection, conditioning, and final data output.</p>
+<ol>
+<li>
+<p><strong>Power Regulation</strong><br>
+   A voltage regulator produces a stable 5 V power supply that runs all components in the system.</p>
+</li>
+<li>
+<p><strong>Light Detection</strong><br>
+   A CDS photoresistor changes its resistance based on how much light is present.<br>
+   This creates an analog voltage that represents light intensity.</p>
+</li>
+<li>
+<p><strong>Signal Conditioning</strong><br>
+   An operational amplifier (op-amp) takes this analog signal and adjusts it so it can be accurately read by the microcontroller.</p>
+</li>
+<li>
+<p><strong>Microcontroller Processing</strong><br>
+   A PIC18F57Q43 Curiosity Nano board:</p>
+</li>
+<li>Reads the analog light signal through its ADC (Analog-to-Digital Converter)  </li>
+<li>Uses digital pins to control a debug LED  </li>
+<li>Reads a debug button for testing or mode changes  </li>
+<li>Sends the processed signals out through an 8-pin connector for use by other systems</li>
+</ol>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://github.com/user-attachments/assets/12879113-0c55-40bf-84af-07524462bc81" data-desc-position="bottom"><img width="701" height="691" alt="ID" src="https://github.com/user-attachments/assets/12879113-0c55-40bf-84af-07524462bc81"></a></p>
 
 
 
