@@ -14,4 +14,4 @@ The PCB supports the system’s electronic functionality by hosting the primary 
 <img width="667" height="552" alt="image" src="https://github.com/user-attachments/assets/9d4f1500-74ae-4e36-9708-8db51c1b9e26" />
 
 
-The Front and the Back of the PCB as a PDF download is available here [*Back*](docs/06-PCB/BACK.pdf), [*Front*](docs/06-PCB/Front.pdf) and the Zip folder of the project [*here*](docs/06-PCB/FRONT1.pdf), the following file is a DFM Checker ensuring manufacturability [*DFM*](docs/06-PCB/Front.pdf)
+The Front and the Back of the PCB as a PDF download is available here [*Back*](docs/06-PCB/BACK.pdf), [*Front*](docs/06-PCB/Front.pdf) and the Zip folder of the project [*here*](docs/06-PCB/FRONT1.pdf), the following file is a DFM Checker ensuring manufacturability [*DFM*](DFM_Checker.pdf)
