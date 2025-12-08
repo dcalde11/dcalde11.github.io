@@ -9,7 +9,7 @@ By listing each component’s voltage and current requirements, we were able to 
 
 Creating a detailed power budget also helps improve the efficiency and reliability of our design. It ensures the automatic blinds system operates smoothly as it detects light levels and adjusts to maintain indoor comfort—without wasting energy or overloading the circuit.
 
-> Capture your power budge as a image to display. Take time to get clean breaks and a well organized layout.
+
 
 <img width="613" height="1539" alt="Screenshot 2025-12-08 162148" src="https://github.com/user-attachments/assets/ee77e5a0-5082-4ae8-8994-0065240288ad" />
 
