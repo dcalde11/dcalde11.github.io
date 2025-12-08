@@ -10,21 +10,20 @@ This system provides a structured approach to sensing ambient light, conditionin
 
 
 1. **Power Regulation**  
-   A voltage regulator produces a stable 5 V power supply that runs all components in the system.
+   * A voltage regulator produces a stable 5 V power supply that runs all components in the system.
 
 2. **Light Detection**  
-   A CDS photoresistor changes its resistance based on how much light is present.  
-   This creates an analog voltage that represents light intensity.
+   * A CDS photoresistor changes its resistance (through the use of a potentiometer) based on how much light is present. This creates an analog voltage that represents light intensity.
 
 3. **Signal Conditioning**  
-   An operational amplifier (op-amp) takes this analog signal and adjusts it so it can be accurately read by the microcontroller.
+   * An operational amplifier (op-amp) takes this analog signal and adjusts it so it can be accurately read by the microcontroller.
 
 4. **Microcontroller Processing**  
    A PIC18F57Q43 Curiosity Nano board:
-   - Reads the analog light signal through its ADC (Analog-to-Digital Converter)  
-   - Uses digital pins to control a debug LED  
-   - Reads a debug button for testing or mode changes  
-   - Sends the processed signals out through an 8-pin connector for use by other systems
+   * Reads the analog light signal through its ADC (Analog-to-Digital Converter)  
+   * Uses digital pins to control a debug LED  
+   * Reads a debug button for testing or mode changes  
+   * Sends the processed signals out through an 8-pin connector for use by other systems
 
 
 
