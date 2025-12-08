@@ -15,17 +15,17 @@ for<br>
 </center>
 
 ## Introduction
-
-* This section includes my notes and observations for the light sensor automation project. My main tasks involved wiring and testing the electrical components, ensuring proper connections and stable signal readings from the sensor. I also worked on improving how the system reacted to changes in light to maintain smooth and reliable operation. Overall, this record outlines my contributions to the electrical setup and performance that supported the successful completion of the project.
+As a member of Team 105, my responsibility was to ensure everyone stayed on track to meet our project deadlines. While my main subsystem was the automated light sensor, I also supported my teammates with the development of their parts of the project. Managing the schedule meant making tough calls on priorities, and though some deadlines shifted, I am proud of our final result. This record outlines my contributions to the electrical setup and performance that made the project a success.
 ### Project Summary
 
-* The sensor detects the light intensity in the environment and sends its readings to a control system that determines the appropriate position of the blinds. Using light data—and, in some cases, additional input such as temperature readings—the system automatically opens or closes the blinds to maintain a comfortable indoor balance. By monitoring brightness levels throughout the day, it helps regulate room temperature, reducing the need for heating when sunlight is available. This automation also removes the need for manual adjustment, improving both energy efficiency and overall comfort.
+The subsystem is designed to trigger a mode change by detecting a specified light threshold using a photoresistor. Once triggered, it sends a signal to my teammate Keith’s subsystem for further action. For an overview of the main components, refer to the Block Diagram. The system uses a PIC18F57Q43 microcontroller (MCU) and a photoresistor to sense changes in ambient light intensity. It converts the photoresistor’s analog signal into a digital reading for processing. A key feature is its adjustable sensitivity, which allows calibration for different environments. By continuously monitoring brightness, the system helps regulate room temperature—for example, reducing heating when sunlight is sufficient. This automation removes the need for manual adjustment, improving both energy efficiency and occupant comfort.
 
 
 
 ### My Contribution
 
-We are a team of engineering students from Arizona State University dedicated to turning embedded system ideas into practical, market-ready solutions. Our project, Temperature Equalizing Blinds, focuses on automating blind adjustments to improve comfort and energy efficiency. The section below highlights my individual role and contributions to the project’s development.
+My contributions extended beyond the outlined scope of the light sensor and team coordination. I actively participated in the development of all subsystems by ensuring proper builds, debugging hardware issues, and revising schematics to ensure wiring matched component datasheets. I also assisted with coding across other subsystems. This comprehensive involvement was crucial for tying the different parts of the project together, ensuring clear signals and smooth overall system operation. Stepping into various roles significantly helped my growth as an engineer. Troubleshooting hardware developed my problem-solving skills, and working across different subsystems and their code gave me an understanding of how systems integrate in a real project.
+
 
 ## Team Contribution
 * [EGR304 Team 105 Report – Product Requirements](https://egr304-2025-f-105.github.io/Team105.github.io/04-Product-Requirements/)
