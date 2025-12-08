@@ -509,6 +509,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Individal Block Diagram
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -518,6 +529,34 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Specifications
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -883,6 +922,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Specifications
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -905,7 +961,9 @@
 
 
 <h1 id="system-overview">System Overview</h1>
-<p>This system provides a structured approach to sensing ambient light, conditioning the resulting analog signal, and processing it through an embedded microcontroller platform. The following sections (1–5) summarize each major subsystem, outlining the progression from power regulation to signal detection, conditioning, and final data output.</p>
+<p>This document describes a structured embedded system for ambient light sensing, signal conditioning, and digital processing. The architecture progresses from regulated power input through analog detection to microcontroller-based data output, as detailed in the following subsystem breakdown (Sections 1–5).</p>
+<h2 id="design-specifications">Design Specifications</h2>
+<p>Following the system design suggestions, the  block diagram includes annotations for the signal gain at each stage. These gain values are calculated based on a 5V input, with the calibration potentiometer set to a resistance of 9.45 kΩ.</p>
 <ol>
 <li><strong>Power Regulation</strong>  </li>
 <li>
