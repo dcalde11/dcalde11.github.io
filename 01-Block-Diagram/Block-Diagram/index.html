@@ -907,18 +907,21 @@
 <h1 id="system-overview">System Overview</h1>
 <p>This system provides a structured approach to sensing ambient light, conditioning the resulting analog signal, and processing it through an embedded microcontroller platform. The following sections (1–5) summarize each major subsystem, outlining the progression from power regulation to signal detection, conditioning, and final data output.</p>
 <ol>
+<li><strong>Power Regulation</strong>  </li>
 <li>
-<p><strong>Power Regulation</strong><br>
-   A voltage regulator produces a stable 5 V power supply that runs all components in the system.</p>
+<p>A voltage regulator produces a stable 5 V power supply that runs all components in the system.</p>
 </li>
 <li>
-<p><strong>Light Detection</strong><br>
-   A CDS photoresistor changes its resistance based on how much light is present.<br>
-   This creates an analog voltage that represents light intensity.</p>
+<p><strong>Light Detection</strong>  </p>
 </li>
 <li>
-<p><strong>Signal Conditioning</strong><br>
-   An operational amplifier (op-amp) takes this analog signal and adjusts it so it can be accurately read by the microcontroller.</p>
+<p>A CDS photoresistor changes its resistance (through the use of a potentiometer) based on how much light is present. This creates an analog voltage that represents light intensity.</p>
+</li>
+<li>
+<p><strong>Signal Conditioning</strong>  </p>
+</li>
+<li>
+<p>An operational amplifier (op-amp) takes this analog signal and adjusts it so it can be accurately read by the microcontroller.</p>
 </li>
 <li>
 <p><strong>Microcontroller Processing</strong><br>
