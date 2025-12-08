@@ -5,8 +5,8 @@ tags:
 - tag2
 ---
 <center>
-<font size= "6">Donovan Calderon's Datasheet</font><br>
-as part of<br>
+<font size= "6">Donovan Calderon</font><br>
+<font size= "6">Contribution to</font><br>
 <font size= "8"> Temperature Equalizing Blinds</font><br>
 for<br>
 <font size= "5"> Team 105 </font><br>
