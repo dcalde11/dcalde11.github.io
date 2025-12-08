@@ -23,7 +23,7 @@ Creating a detailed power budget also helps improve the efficiency and reliabili
 
 ## Conclusions
 
-From the prepare Power Budget, the items where choosen due to prior experince using said components and hope to have a sense of familiarity with the item. Another thing is that they all fall within the Curiosity Nano ability to supluss the output voltage needed to support the system.
+The power budget verifies that the light-detection subsystem that includes the 5 V regulator, CDS photoresistor with potentiometer, op-amp conditioning stage, and the Curiosity Nano microcontroller—operates well within the system’s power limits as shown in the image of the BOM. By reviewing each component’s voltage and current requirements, we confirmed the circuit can reliably sense ambient light, condition the signal for accurate ADC readings, and process it without risking overload or instability. This ensures the subsystem remains efficient, stable, and ready for integration into the larger project.
 
 ## Resouces
 
