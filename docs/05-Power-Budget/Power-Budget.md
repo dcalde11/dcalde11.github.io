@@ -11,8 +11,9 @@ Creating a detailed power budget also helps improve the efficiency and reliabili
 
 > Capture your power budge as a image to display. Take time to get clean breaks and a well organized layout.
 
+<img width="613" height="1539" alt="Screenshot 2025-12-08 162148" src="https://github.com/user-attachments/assets/ee77e5a0-5082-4ae8-8994-0065240288ad" />
 
-<img width="617" height="1557" alt="Final_V" src="https://github.com/user-attachments/assets/75bc2f46-feae-422d-884c-5e6cacfedc42" />
+
 
 
 
