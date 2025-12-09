@@ -138,4 +138,47 @@ title: Component Selection Example
    
 **Choice:** 1. MCP6004-I/P IC OPAMP GP 4 CIRCUIT 14DIP
 
-**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This allows for amplifying the difference of input voltage created by the PDV-P8103 CDS PHOTORESISTOR 16-33KOHM. By amplifying the difference the pic can read the levels and once surpassing a threshold or certain levels it sets the blind to pre determined positions 
+**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order 
+to interface with the PSoC. This allows for amplifying the difference of input voltage created by the PDV-
+P8103 CDS PHOTORESISTOR 16-33KOHM. By amplifying the difference the pic can read the levels and once 
+surpassing a threshold or certain levels it sets the blind to pre determined positions 
+
+# **Final Component Selection Summary**
+
+| Component Category | Selected Part | Manufacturer | Key Specifications | Unit Price | Justification |
+|-------------------|---------------|--------------|-------------------|------------|---------------|
+| **Light Sensor** | PDV-P8103 CDS Photoresistor | Advanced Photonix | 16–33 kΩ range, through-hole | $0.70 | Inexpensive, class-proven, compatible with PSoC, easy installation |
+| **Operational Amplifier** | MCP6004-I/P | Microchip Technology | Quad op-amp, rail-to-rail, 14-DIP | $0.59 | Low-cost, familiar from lab use, four circuits, simple interface |
+| **Microcontroller** | PIC18F57Q43 | Microchip Technology | 8-bit, integrated ADC, 64-pin TQFP | — | Provided in-class, capable ADC for sensor input, familiar development environment |
+
+---
+
+## **Selection Rationale Summary**
+
+### **Photoresistor (PDV-P8103)**
+- Provides reliable ambient light sensing with variable resistance output
+- Already used in coursework, reducing learning curve and validation time
+- Cost-effective at $0.70 per unit with straightforward through-hole mounting
+
+### **Op-Amp (MCP6004-I/P)**
+- Amplifies small photoresistor signals for robust ADC conversion
+- Rail-to-rail operation ensures full signal swing at low voltages
+- Quad configuration allows unused sections to be properly terminated
+- Prior classroom experience enables a strong foundation for implementation
+
+### **Microcontroller (PIC18F57Q43)**
+- Integrated 12-bit ADC directly reads amplified sensor signals
+- Sufficient I/O for sensor interface, debug controls, and external communication
+- Supported by in-class development tools and libraries
+
+---
+
+## **System Benefits**
+1. **Reduced Risk**: All major active components have been validated in previous lab sessions
+2. **Cost Efficiency**: Total active component cost under $2.00 per unit (excluding microcontroller)
+3. **Design Continuity**: Familiar components accelerate prototyping and debugging
+4. **Performance**: Adequate signal chain from sensing to processing to output control
+
+---
+
+*Note: Passive components (resistors, capacitors, potentiometers, connectors) and supporting circuitry are specified in the full schematic but omitted from this summary as requested.*
