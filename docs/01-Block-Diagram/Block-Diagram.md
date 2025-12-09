@@ -5,7 +5,8 @@ tags:
 - tag2
 ---
 # System Overview
-This document describes a structured embedded system for ambient light sensing, signal conditioning, and digital processing. The architecture progresses from regulated power input through analog detection to microcontroller-based data output, as detailed in the following subsystem breakdown (Sections 1–5).
+This document describes a structured embedded system for ambient light sensing, signal conditioning, and digital processing. The architecture progresses from regulated power input through analog detection to microcontroller-based data 
+output, as detailed in the following subsystem breakdown (Sections 1–5).
 
 ## Design Specifications
 Following the system design suggestions, the  block diagram includes annotations for the signal gain at each stage. These gain values are calculated based on a 5V input, with the calibration potentiometer set to a resistance of 9.45 kΩ.
