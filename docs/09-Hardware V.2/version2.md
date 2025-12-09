@@ -66,6 +66,6 @@ Total estimated BOM increase: $5-8 per unit
 
 
 ## Related Documentation
-- [Current Schematic](../04-Schematic/voltage_regulator.pdf)
-- [Component Selection Analysis](./component_selection.md)
-- [Firmware Implementation](../05-Code/main.c)
+- [Current Schematic](https://dcalde11.github.io/04-Schematic/schematic/)
+- [Component Selection Analysis](https://dcalde11.github.io/02-Component-Selection/Component-Selection/)
+- [Firmware Implementation](https://dcalde11.github.io/08-Resources/resources/)
