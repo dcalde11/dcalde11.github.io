@@ -1181,19 +1181,19 @@ This document details the implementation of the <strong>Light Sensor Subsystem (
 </tbody>
 </table>
 <h3 id="3-software-architecture-lightsensor">3. Software Architecture – LIGHTSENSOR</h3>
-<p>#### 3.1 Control Logic
- - <strong>Read PHOTORESISTOR_IN (RA0)</strong>
- - <strong>Compare ADC value to Threshold</strong>
- -  If <strong>ADC &gt; Threshold</strong>
- - <code>DIGITAL_TO_KEITH = HIGH</code>
- - <code>DEBUG_LED = ON</code>
- -  Else- <code>DIGITAL_TO_KEITH = LOW</code>
- - <code>DEBUG_LED = OFF</code>
- - <strong>Check DEBUG_BUTTON (RD2)</strong>
- - Toggle <code>debugMode</code>
- - Force state updates when presse</p>
+<ul>
+<li><strong>Read PHOTORESISTOR_IN (RA0)</strong></li>
+<li><strong>Compare ADC value to Threshold</strong></li>
+<li>If <strong>ADC &gt; Threshold</strong></li>
+<li><code>DIGITAL_TO_KEITH = HIGH</code></li>
+<li><code>DEBUG_LED = ON</code></li>
+<li>Else- <code>DIGITAL_TO_KEITH = LOW</code></li>
+<li><code>DEBUG_LED = OFF</code></li>
+<li><strong>Check DEBUG_BUTTON (RD2)</strong></li>
+<li>Toggle <code>debugMode</code></li>
+<li>Force state updates when presse</li>
+</ul>
 <h2 id="4-complete-code-implementation-lightsensor">4. Complete Code Implementation - LIGHTSENSOR</h2>
-<p><em>The full code for LIGHTSENSOR is included in <code>LightSensor.c</code>. It initializes the ADC, reads the photoresistor, manages debug mode, and toggles outputs.</em></p>
 <h2 id="5-testing-validation-lightsensor">5. Testing &amp; Validation - LIGHTSENSOR</h2>
 <p><strong>5.1 Sensor Testing:</strong><br>
 - Cover/uncover photoresistor to trigger state changes<br>
