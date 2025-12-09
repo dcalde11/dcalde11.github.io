@@ -12,9 +12,13 @@ I chose three main components:
 
 * PIC18F57Q43 Microcontroller – to process readings and control the blinds
 
-I evaluated each part based on cost, ease of use, and my prior hands‑on experience from classroom labs. For every option, I included product specs, images, purchase links, and pros/cons tables. My final selections prioritize reliability, affordability, and seamless integration—helping me stay on budget while building a system I know how to troubleshoot.
+I evaluated each part based on cost, ease of use, and my prior hands‑on experience from classroom labs. For 
+every option, I included product specs, images, purchase links, and pros/cons tables. My final selections 
+prioritize reliability, affordability, and seamless integration—helping me stay on budget while building a 
+system I know how to troubleshoot.
 
-This page also shows the final pin mappings and explains how each component fits into the overall signal chain.
+This page also shows the final pin mappings and explains how each component fits into the overall signal 
+chain.
 
 
 
@@ -108,7 +112,12 @@ This page also shows the final pin mappings and explains how each component fits
 | Battery system compatible | |
 
 ### **Selected: MCP6004-I/P**
-**Rationale:** This op-amp provides straightforward amplification of the photoresistor's output voltage without requiring complex external circuitry. By amplifying the signal difference, the microcontroller can accurately detect light level changes and trigger appropriate blind positioning. Our prior classroom experience with this component reduces implementation risk and accelerates development.
+**Rationale:** This op-amp provides straightforward amplification of the photoresistor's output voltage 
+without requiring complex external circuitry. By amplifying the signal difference, the microcontroller can 
+accurately detect light level changes and trigger appropriate blind positioning. Our prior classroom 
+experience with this component reduces implementation risk and accelerates development.
+
+
 
 ---
 
