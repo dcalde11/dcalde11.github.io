@@ -26,7 +26,7 @@
 
     
       
-        <title>Component Selection Example - EGR 304 Donovan Calderon Data Sheet Template</title>
+        <title>Component Selection - EGR 304 Donovan Calderon Data Sheet Template</title>
       
     
     
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Component Selection Example
+              Component Selection
             
           </span>
         </div>
@@ -559,7 +559,7 @@
           
   
   <span class="md-ellipsis">
-    Component Selection Example
+    Component Selection
   </span>
   
 
@@ -570,7 +570,7 @@
         
   
   <span class="md-ellipsis">
-    Component Selection Example
+    Component Selection
   </span>
   
 
@@ -1044,9 +1044,7 @@
   
 
 
-<blockquote>
-<p>Also acceptable, more markdown friendly</p>
-</blockquote>
+<p>**Options </p>
 <p><strong>External Clock Module</strong></p>
 <ol>
 <li>PDV-P8103 CDS PHOTORESISTOR 16-33KOHM</li>
@@ -1323,6 +1321,58 @@ surpassing a threshold or certain levels it sets the blind to pre determined pos
 <li><strong>Design Continuity</strong>: Familiar components accelerate prototyping and debugging</li>
 <li><strong>Performance</strong>: Adequate signal chain from sensing to processing to output control</li>
 </ol>
+<p><strong>Pin Configuration with Custom Names:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Location</th>
+<th>Pin Name</th>
+<th>Function</th>
+<th>Direction</th>
+<th>Custom Name</th>
+<th>Analog</th>
+<th>Pull-Up</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RA0</td>
+<td>ADC</td>
+<td>Analog Input</td>
+<td>input</td>
+<td>PHOTORESISTOR_IN</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>RA2</td>
+<td>GPIO</td>
+<td>Digital Output</td>
+<td>output</td>
+<td>DIGITAL_TO_KEITH</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>RD1</td>
+<td>GPIO</td>
+<td>LED Output</td>
+<td>output</td>
+<td>DEBUG_LED</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>RD2</td>
+<td>GPIO</td>
+<td>Button Input</td>
+<td>input</td>
+<td>DEBUG_BUTTON</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
 
 
 
