@@ -24,7 +24,7 @@ This document details the implementation of the **Light Sensor Subsystem (LIGHTS
 | RD2      | GPIO     | Button Input   | input     | DEBUG_BUTTON     | no     | yes     |
 
 ### 3. Software Architecture – LIGHTSENSOR
- #### 3.1 Control Logic
+
  - **Read PHOTORESISTOR_IN (RA0)**
  - **Compare ADC value to Threshold**
  -  If **ADC > Threshold**
@@ -38,7 +38,7 @@ This document details the implementation of the **Light Sensor Subsystem (LIGHTS
 
 ## 4. Complete Code Implementation - LIGHTSENSOR
 
-*The full code for LIGHTSENSOR is included in `LightSensor.c`. It initializes the ADC, reads the photoresistor, manages debug mode, and toggles outputs.*
+
 
 
 
