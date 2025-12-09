@@ -65,7 +65,8 @@ chain.
 | | Tariff for US shipping |
 
 ### **Selected: PDV-P8103 CDS Photoresistor**
-**Rationale:** Provides reliable light-to-electrical signal conversion needed for detecting ambient light levels. Its output signal corresponds directly to light intensity, enabling the system to adjust blinds based on environmental conditions. The photoresistor's simplicity and compatibility with our existing PSoC architecture make it ideal for this application, and an amplifier can be added if needed to strengthen the signal for motor control.
+**Rationale:** Provides reliable light-to-electrical signal conversion needed for detecting ambient light levels. Its output signal corresponds directly to light intensity, enabling the system to adjust blinds based on environmental 
+conditions. The photoresistor's simplicity and compatibility with our existing PSoC architecture make it ideal for this application, and an amplifier can be added if needed to strengthen the signal for motor control.
 
 ---
 
