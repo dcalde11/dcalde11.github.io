@@ -181,4 +181,3 @@ surpassing a threshold or certain levels it sets the blind to pre determined pos
 
 ---
 
-*Note: Passive components (resistors, capacitors, potentiometers, connectors) and supporting circuitry are specified in the full schematic but omitted from this summary as requested.*
