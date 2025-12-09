@@ -11,12 +11,12 @@ Our analysis focuses on modifications that would improve system robustness, powe
 ## Summary of Proposed Changes
 
 ### 1. Power Supply Enhancement
-**Current Approach:** Linear voltage regulator (7805/LM317 type)  
-**Proposed Change:** Switching regulator (buck converter) followed by LDO  
+**Current Approach:** Linear voltage regulator
+**Proposed Change:** Switching regulator (buck converter)  
 **Rationale:** The current linear regulator wastes significant power as heat when converting higher input voltages. A switching regulator would improve efficiency from approximately 60% to 90%, reducing thermal stress and extending battery life in portable applications.
 
 ### 2. Signal Chain Optimization
-**Current Approach:** Fixed-gain non-inverting amplifier  
+**Current Approach:** Non-inverting amplifier  
 **Proposed Change:** Digitally-controlled gain stage using digital potentiometer  
 **Rationale:** The photoresistor's logarithmic response requires different amplification across lighting conditions. Programmable gain allows field calibration and adaptive sensitivity without component changes.
 
@@ -35,10 +35,6 @@ Our analysis focuses on modifications that would improve system robustness, powe
 **Proposed Change:** Hybrid sensor array with photodiode for fast response  
 **Rationale:** Photoresistors have relatively slow response times (milliseconds). Adding a photodiode enables detection of rapid light changes, while maintaining the photoresistor for overall ambient light measurement.
 
-### 6. Manufacturing & Assembly
-**Current Approach:** Mixed through-hole and surface-mount components  
-**Proposed Change:** Standardized surface-mount design with test points  
-**Rationale:** Surface-mount components reduce board size, improve manufacturability, and lower assembly costs. Strategic test points would simplify production testing and field diagnostics.
 
 ## Technical Considerations
 
