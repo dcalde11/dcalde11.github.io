@@ -22,4 +22,4 @@ Here are rendered images of the PCB,
 *as well as the back view:
 <img width="1580" height="754" alt="voltage_regulator_back" src="https://github.com/user-attachments/assets/65d2342d-6574-46c4-a97e-61748a461487" />
 
-The Front and the Back of the PCB as a PDF download is available here [*Back*](https://github.com/dcalde11/dcalde11.github.io/blob/0c3ea64dea899fcdf4591dc96e5ede6f2f4cdd7b/docs/06-PCB/BACK.pdf), [*Front*](docs/06-PCB/Front.pdf) and the Zip folder of the project [*here*](docs/06-PCB/FRONT1.pdf), the following file is a DFM Checker ensuring manufacturability [*DFM*](DFM_Checker.pdf)
+The Front and the Back of the PCB as a PDF download is available here [*Back*](https://github.com/dcalde11/dcalde11.github.io/blob/0c3ea64dea899fcdf4591dc96e5ede6f2f4cdd7b/docs/06-PCB/BACK.pdf), [*Front*](https://github.com/dcalde11/dcalde11.github.io/blob/b2b5758855f0a35c0f30d5d4cf58fa9294f73d1f/docs/06-PCB/FRONT1.pdf) and the Zip folder of the project [*here*](docs/06-PCB/FRONT1.pdf), the following file is a DFM Checker ensuring manufacturability [*DFM*](DFM_Checker.pdf)
