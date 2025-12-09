@@ -1,10 +1,10 @@
 ---
-title: Component Selection Example
+title: Component Selection 
 ---
 
 
 
-> Also acceptable, more markdown friendly
+**Options 
 
 **External Clock Module**
 
@@ -178,5 +178,14 @@ surpassing a threshold or certain levels it sets the blind to pre determined pos
 2. **Cost Efficiency**: Total active component cost under $2.00 per unit (excluding microcontroller)
 3. **Design Continuity**: Familiar components accelerate prototyping and debugging
 4. **Performance**: Adequate signal chain from sensing to processing to output control
+
+**Pin Configuration with Custom Names:**
+
+| Location | Pin Name | Function        | Direction | Custom Name        | Analog | Pull-Up |
+|----------|----------|----------------|-----------|------------------|--------|---------|
+| RA0      | ADC      | Analog Input   | input     | PHOTORESISTOR_IN | yes    | no      |
+| RA2      | GPIO     | Digital Output | output    | DIGITAL_TO_KEITH | no     | no      |
+| RD1      | GPIO     | LED Output     | output    | DEBUG_LED        | no     | no      |
+| RD2      | GPIO     | Button Input   | input     | DEBUG_BUTTON     | no     | yes     |
 
 
