@@ -4,8 +4,11 @@ title: Schematic
 
 ## Overview
 
-This schematic supports overall system functionality by integrating power regulation, light sensing, and control operations. Ambient light intensity is detected by a photoresistor, with the resulting small analog voltage amplified by a non‑inverting op‑amp stage using the MCP6004. Any unused op‑amp pins are properly terminated—pulled to power through a resistor or grounded—to ensure stable operation.
-The amplified signal is conditioned by an ADC driver and then enters the PIC18F57Q43 microcontroller on pin RA0 for analog-to-digital conversion. After processing the light data, the microcontroller outputs the control signal from pin RA2. This output is sent to an external subsystem via an 8‑pin shared connector, where pin 7 provides power and pin 8 serves as ground.A debug section with an LED and tactile button enables manual state changes for functional testing. The power regulation section supplies clean, stable voltage rails for reliable operation of all analog and digital circuitry.
+This schematic supports overall system functionality by integrating power regulation, light sensing, and control operations. Ambient light intensity is detected by a photoresistor, with the resulting small analog voltage amplified by a 
+non‑inverting op‑amp stage using the MCP6004. Any unused op‑amp pins are properly terminated—pulled to power through a resistor or grounded—to ensure stable operation.
+The amplified signal is conditioned by an ADC driver and then enters the PIC18F57Q43 microcontroller on pin RA0 for analog-to-digital conversion. After processing the light data, the microcontroller outputs the control signal from pin RA2. 
+This output is sent to an external subsystem via an 8‑pin shared connector, where pin 7 provides power and pin 8 serves as ground.A debug section with an LED and tactile button enables manual state changes for functional testing. The power 
+regulation section supplies clean, stable voltage rails for reliable operation of all analog and digital circuitry.
 
 
 
