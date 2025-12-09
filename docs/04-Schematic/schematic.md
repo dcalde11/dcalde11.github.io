@@ -17,6 +17,6 @@ This schematic is designed to support the overall functionality of the system by
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](docs/04-Schematic/voltage_regulator.pdf),  and the Zip folder of the project [*here*](docs/04-Schematic/LightSensorV1.zip)
+The schematic as a PDF download is available [*here*](https://github.com/dcalde11/dcalde11.github.io/blob/4c5b0d906c9cb7297b95a6b4c42ddb51027e799b/docs/04-Schematic/voltage_regulator.pdf),  and the Zip folder of the project [*here*](docs/04-Schematic/LightSensorV1.zip)
 
 
