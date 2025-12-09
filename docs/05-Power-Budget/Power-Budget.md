@@ -3,11 +3,14 @@ title: Power Budget
 ---
 
 ## Overview
-For our Electric Blinds project, we created a power budget to understand and manage how much electrical power our system requires. The power budget helps ensure that all components, including the microcontroller, light sensor, and operational amplifier, receive adequate power without exceeding the system’s supply limits.
+For our Electric Blinds project, we created a power budget to understand and manage how much electrical power our system requires. The power budget helps ensure that all components, including the microcontroller, light sensor, and 
+operational amplifier, receive adequate power without exceeding the system’s supply limits.
 
-By listing each component’s voltage and current requirements, we were able to calculate the total power needed for the system and confirm that our chosen power source and voltage regulators can handle the load safely. This step is essential for preventing power shortages, overheating, or component damage.
+By listing each component’s voltage and current requirements, we were able to calculate the total power needed for the system and confirm that our chosen power source and voltage regulators can handle the load safely. This step is 
+essential for preventing power shortages, overheating, or component damage.
 
-Creating a detailed power budget also helps improve the efficiency and reliability of our design. It ensures the automatic blinds system operates smoothly as it detects light levels and adjusts to maintain indoor comfort—without wasting energy or overloading the circuit.
+Creating a detailed power budget also helps improve the efficiency and reliability of our design. It ensures the automatic blinds system operates smoothly as it detects light levels and adjusts to maintain indoor comfort—without wasting 
+energy or overloading the circuit.
 
 
 
@@ -23,7 +26,9 @@ Creating a detailed power budget also helps improve the efficiency and reliabili
 
 ## Conclusions
 
-The power budget verifies that the light-detection subsystem that includes the 5 V regulator, CDS photoresistor with potentiometer, op-amp conditioning stage, and the Curiosity Nano microcontroller—operates well within the system’s power limits as shown in the image of the BOM. By reviewing each component’s voltage and current requirements, we confirmed the circuit can reliably sense ambient light, condition the signal for accurate ADC readings, and process it without risking overload or instability. This ensures the subsystem remains efficient, stable, and ready for integration into the larger project.
+The power budget verifies that the light-detection subsystem that includes the 5 V regulator, CDS photoresistor with potentiometer, op-amp conditioning stage, and the Curiosity Nano microcontroller—operates well within the system’s power 
+limits as shown in the image of the BOM. By reviewing each component’s voltage and current requirements, we confirmed the circuit can reliably sense ambient light, condition the signal for accurate ADC readings, and process it without 
+risking overload or instability. This ensures the subsystem remains efficient, stable, and ready for integration into the larger project.
 
 ## Resouces
 
