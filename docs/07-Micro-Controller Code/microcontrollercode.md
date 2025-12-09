@@ -1,75 +1,155 @@
-# MPLab Project Documentation - LIGHTSENSOR
+# Micro-Controller Code: LIGHTSENSOR
 
-## 1. Project Overview & Objectives - LIGHTSENSOR
+## Overview
+This embedded C program implements the core logic for a light-sensitive blinds control system on a PIC18F57Q43 microcontroller. It continuously reads analog voltage from a photoresistor, compares the value against a preset threshold, and sends a corresponding digital signal to an external motor controller. The firmware supports both automatic light-based operation and a manual debug mode—toggled by a tactile button—with visual feedback provided through an LED. Designed for reliability and real-time responsiveness, the code integrates ADC readings, state management, and heartbeat monitoring within a simple, maintainable loop. For futher details refer to the Resources page.
+```c
+/*
+ * MAIN Generated Driver File
+ * 
+ * @file main.c
+ * 
+ * @defgroup main MAIN
+ * 
+ * @brief This is the generated driver implementation file for the MAIN driver.
+ *
+ * @version MAIN Driver Version 1.0.2
+ *
+ * @version Package Version: 3.1.2
+*/
 
-**Objective:**  
-This document details the implementation of the **Light Sensor Subsystem (LIGHTSENSOR)** using a PIC18F57Q43 microcontroller. This subsystem detects ambient light and communicates with Keith Payne's subsystem via a digital output.
+/*
+© [2025] Microchip Technology Inc. and its subsidiaries.
 
-**Software Concept:**
-- **Light ON** → Send HIGH signal to Keith
-- **Light OFF** → Send LOW signal to Keith
+    Subject to your compliance with these terms, you may use Microchip 
+    software and any derivatives exclusively with Microchip products. 
+    You are responsible for complying with 3rd party license terms  
+    applicable to your use of 3rd party software (including open source  
+    software) that may accompany Microchip software. SOFTWARE IS ?AS IS.? 
+    NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, APPLY TO THIS 
+    SOFTWARE, INCLUDING ANY IMPLIED WARRANTIES OF NON-INFRINGEMENT,  
+    MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT 
+    WILL MICROCHIP BE LIABLE FOR ANY INDIRECT, SPECIAL, PUNITIVE, 
+    INCIDENTAL OR CONSEQUENTIAL LOSS, DAMAGE, COST OR EXPENSE OF ANY 
+    KIND WHATSOEVER RELATED TO THE SOFTWARE, HOWEVER CAUSED, EVEN IF 
+    MICROCHIP HAS BEEN ADVISED OF THE POSSIBILITY OR THE DAMAGES ARE 
+    FORESEEABLE. TO THE FULLEST EXTENT ALLOWED BY LAW, MICROCHIP?S 
+    TOTAL LIABILITY ON ALL CLAIMS RELATED TO THE SOFTWARE WILL NOT 
+    EXCEED AMOUNT OF FEES, IF ANY, YOU PAID DIRECTLY TO MICROCHIP FOR 
+    THIS SOFTWARE.
+*/
+#include "mcc_generated_files/system/system.h"
+#include "mcc_generated_files/adc/adc.h"
+#include <stdint.h>
+#include <stdbool.h>
 
-## 2. MCC Configuration Summary - LIGHTSENSOR
+// ===================== CONSTANTS =====================
+#define VREF 5.0f
+#define PHOTORESISTOR_THRESHOLD_V 2.5f
+#define ADC_MAX_COUNTS 4095
 
-**Drivers Configuration:**  
-- **ADC Driver:** Enabled (only driver used in this project)
+#define ADC_THRESHOLD   (uint16_t)((PHOTORESISTOR_THRESHOLD_V / VREF) * ADC_MAX_COUNTS)
 
-**Pin Configuration with Custom Names:**
+// ===================== GLOBALS =====================
+volatile uint16_t adcValue = 0;
+volatile bool lightDetected = false;
+volatile bool debugMode = false;
 
-| Location | Pin Name | Function        | Direction | Custom Name        | Analog | Pull-Up |
-|----------|----------|----------------|-----------|------------------|--------|---------|
-| RA0      | ADC      | Analog Input   | input     | PHOTORESISTOR_IN | yes    | no      |
-| RA2      | GPIO     | Digital Output | output    | DIGITAL_TO_KEITH | no     | no      |
-| RD1      | GPIO     | LED Output     | output    | DEBUG_LED        | no     | no      |
-| RD2      | GPIO     | Button Input   | input     | DEBUG_BUTTON     | no     | yes     |
+// ===================== LED CONTROL =====================
+void SetDebugLED(bool on) {
+    if(on) DEBUG_LED_SetHigh();
+    else   DEBUG_LED_SetLow();
+}
 
-### 3. Software Architecture – LIGHTSENSOR
- #### 3.1 Control Logic
- - **Read PHOTORESISTOR_IN (RA0)**
- - **Compare ADC value to Threshold**
- -  If **ADC > Threshold**
- - `DIGITAL_TO_KEITH = HIGH`
- - `DEBUG_LED = ON`
- -  Else- `DIGITAL_TO_KEITH = LOW`
- - `DEBUG_LED = OFF`
- - **Check DEBUG_BUTTON (RD2)**
- - Toggle `debugMode`
- - Force state updates when presse
+void FlashLEDPattern(uint8_t count) {
+    for(uint8_t i = 0; i < count; i++) {
+        SetDebugLED(true);
+        __delay_ms(150);
+        SetDebugLED(false);
+        __delay_ms(150);
+    }
+}
 
-## 4. Complete Code Implementation - LIGHTSENSOR
+void IndicateStateChange(bool state) {
+    FlashLEDPattern(state ? 1 : 2);
+    SetDebugLED(state);
+}
 
-*The full code for LIGHTSENSOR is included in `LightSensor.c`. It initializes the ADC, reads the photoresistor, manages debug mode, and toggles outputs.*
+// ===================== OUTPUT TO KEITH =====================
+void SignalKeith(bool active) {
+    if(active) {
+        DIGITAL_TO_KEITH_SetHigh();
+        SetDebugLED(true);
+    } else {
+        DIGITAL_TO_KEITH_SetLow();
+        SetDebugLED(false);
+    }
+}
 
+// ===================== BUTTON DEBUG MODE =====================
+void HandleDebugButton(void) {
+    static bool last = false;
+    bool current = DEBUG_BUTTON_GetValue();
 
+    if(current && !last) {
+        debugMode = !debugMode;
 
-## 5. Testing & Validation - LIGHTSENSOR
+        FlashLEDPattern(3);   // Indicate debug toggle
 
-**5.1 Sensor Testing:**  
-- Cover/uncover photoresistor to trigger state changes  
-- Confirm DIGITAL_TO_KEITH output reflects light detection  
-- DEBUG_LED shows correct state
+        lightDetected = !lightDetected;
+        SignalKeith(lightDetected);
+        IndicateStateChange(lightDetected);
+    }
 
-**5.2 Debug Testing:**  
-- Press DEBUG_BUTTON to toggle manual mode  
-- LED flashes indicate debug toggle  
-- Forced state changes reflected in output
+    last = current;
+}
 
+// ===================== AUTO LOGIC =====================
+void UpdateSystemStatus(void) {
+    bool lightNow = (adcValue > ADC_THRESHOLD);
 
+    if(!debugMode && lightNow != lightDetected) {
+        lightDetected = lightNow;
+        SignalKeith(lightDetected);
+        IndicateStateChange(lightDetected);
+    }
+}
 
-## 6. System Specifications - LIGHTSENSOR
+// ===================== MAIN =====================
+int main(void) {
 
-- **Operating Voltage:** 5V DC  
-- **ADC Resolution:** 12-bit (0–4095)  
-- **Light Threshold:** 2.5V  
-- **Input:** PHOTORESISTOR_IN (RA0)  
-- **Output:** DIGITAL_TO_KEITH (RA2)  
-- **Status LED:** DEBUG_LED (RD1)  
-- **Control Button:** DEBUG_BUTTON (RD2)  
+    SYSTEM_Initialize();
+    ADC_Initialize();
 
+    FlashLEDPattern(5);   // Boot indicator
 
+    lightDetected = false;
+    SignalKeith(false);
 
-**DOCUMENT VERSION: LIGHTSENSOR - FINAL**  
-**STATUS: PRODUCTION READY**
+    while(1) {
 
+        HandleDebugButton();
 
-Below is the file for the main code that was used in programming the system [*Main*](docs/MicroControllerCode/main.c)
+        // Read the photoresistor from RA0
+        ADC_ChannelSelect(PHOTORESISTOR_IN);
+        ADC_ConversionStart();
+        while(!ADC_IsConversionDone());
+        adcValue = ADC_ConversionResultGet();     // ? correct API
+
+        UpdateSystemStatus();
+
+        // Heartbeat
+        static uint32_t hb = 0;
+        if(hb++ >= 5000) {
+            bool cur = DEBUG_LED_GetValue();
+            SetDebugLED(!cur);
+            __delay_ms(50);
+            SetDebugLED(cur);
+            hb = 0;
+        }
+
+        __delay_ms(1);
+    }
+
+    return 0;
+}
+```
