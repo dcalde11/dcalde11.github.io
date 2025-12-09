@@ -179,5 +179,4 @@ surpassing a threshold or certain levels it sets the blind to pre determined pos
 3. **Design Continuity**: Familiar components accelerate prototyping and debugging
 4. **Performance**: Adequate signal chain from sensing to processing to output control
 
----
 
