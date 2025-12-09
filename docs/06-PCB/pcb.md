@@ -13,5 +13,13 @@ The PCB supports the system’s electronic functionality by hosting the primary 
 * The back side of the PCB provides supporting routing, ground planes, and additional electrical connections that enhance signal integrity and noise reduction. Minimal components are placed on this layer to maintain clarity and ensure reliable operation, with through-hole pads and vias connecting the circuitry between layers for stable system performance.
 <img width="667" height="552" alt="image" src="https://github.com/user-attachments/assets/9d4f1500-74ae-4e36-9708-8db51c1b9e26" />
 
+### 3D Rendered Images of PCB
+
+Here are rendered images of the PCB,
+* The first view consists of the front view :
+ <img width="1385" height="754" alt="voltage_regulator-Front" src="https://github.com/user-attachments/assets/f18e7b1e-f78b-42b2-86f4-ff76b788d939" />
+
+*as well as the back view:
+<img width="1580" height="754" alt="voltage_regulator_back" src="https://github.com/user-attachments/assets/65d2342d-6574-46c4-a97e-61748a461487" />
 
 The Front and the Back of the PCB as a PDF download is available here [*Back*](docs/06-PCB/BACK.pdf), [*Front*](docs/06-PCB/Front.pdf) and the Zip folder of the project [*here*](docs/06-PCB/FRONT1.pdf), the following file is a DFM Checker ensuring manufacturability [*DFM*](DFM_Checker.pdf)
