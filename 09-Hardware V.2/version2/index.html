@@ -995,15 +995,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#6-manufacturing-assembly" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Manufacturing &amp; Assembly
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1157,15 +1148,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#6-manufacturing-assembly" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Manufacturing &amp; Assembly
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1243,11 +1225,11 @@
 <hr>
 <h2 id="summary-of-proposed-changes">Summary of Proposed Changes</h2>
 <h3 id="1-power-supply-enhancement">1. Power Supply Enhancement</h3>
-<p><strong>Current Approach:</strong> Linear voltage regulator (7805/LM317 type)<br>
-<strong>Proposed Change:</strong> Switching regulator (buck converter) followed by LDO<br>
+<p><strong>Current Approach:</strong> Linear voltage regulator
+<strong>Proposed Change:</strong> Switching regulator (buck converter)<br>
 <strong>Rationale:</strong> The current linear regulator wastes significant power as heat when converting higher input voltages. A switching regulator would improve efficiency from approximately 60% to 90%, reducing thermal stress and extending battery life in portable applications.</p>
 <h3 id="2-signal-chain-optimization">2. Signal Chain Optimization</h3>
-<p><strong>Current Approach:</strong> Fixed-gain non-inverting amplifier<br>
+<p><strong>Current Approach:</strong> Non-inverting amplifier<br>
 <strong>Proposed Change:</strong> Digitally-controlled gain stage using digital potentiometer<br>
 <strong>Rationale:</strong> The photoresistor's logarithmic response requires different amplification across lighting conditions. Programmable gain allows field calibration and adaptive sensitivity without component changes.</p>
 <h3 id="3-output-protection">3. Output Protection</h3>
@@ -1262,10 +1244,6 @@
 <p><strong>Current Approach:</strong> Single PDV-P8103 photoresistor<br>
 <strong>Proposed Change:</strong> Hybrid sensor array with photodiode for fast response<br>
 <strong>Rationale:</strong> Photoresistors have relatively slow response times (milliseconds). Adding a photodiode enables detection of rapid light changes, while maintaining the photoresistor for overall ambient light measurement.</p>
-<h3 id="6-manufacturing-assembly">6. Manufacturing &amp; Assembly</h3>
-<p><strong>Current Approach:</strong> Mixed through-hole and surface-mount components<br>
-<strong>Proposed Change:</strong> Standardized surface-mount design with test points<br>
-<strong>Rationale:</strong> Surface-mount components reduce board size, improve manufacturability, and lower assembly costs. Strategic test points would simplify production testing and field diagnostics.</p>
 <h2 id="technical-considerations">Technical Considerations</h2>
 <h3 id="cost-implications">Cost Implications</h3>
 <p>Total estimated BOM increase: $5-8 per unit
