@@ -1220,30 +1220,44 @@
 
 <h1 id="hardware-design-version-2-improvement-analysis">Hardware Design Version 2: Improvement Analysis</h1>
 <h2 id="page-overview">Page Overview</h2>
-<p>This section presents a forward-looking evaluation of potential enhancements for the next iteration of our light-sensing blinds controller. Drawing from hands-on experience with the current schematic—which successfully integrates power regulation, photoresistor sensing, PIC18F57Q43 microcontroller processing, and a functional debug interface—we identify several practical upgrade paths.</p>
-<p>Our analysis focuses on modifications that would improve system robustness, power efficiency, and production readiness while preserving the proven core architecture. Each proposed change targets specific limitations observed during prototype testing, balancing enhanced performance with reasonable implementation complexity and cost.</p>
+<p>This section evaluates potential enhancements for the next iteration of our light-sensing blinds controller. 
+Based on hands‑on experience with the current schematic—which successfully integrates power regulation, 
+photoresistor sensing, PIC18F57Q43 processing, and a debug interface—we identify several key areas where the 
+hardware could be made more robust, and efficient.</p>
+<p>My focuses on the modifications would improve system robustness, efficiency, and production readiness 
+while preserving the proven core objective of the subsytem. Each proposed change targets certain 
+limitations observed during prototype testing, these solution will try in balancing better performance with 
+reasonable implementation complexity and cost.</p>
 <hr>
 <h2 id="summary-of-proposed-changes">Summary of Proposed Changes</h2>
 <h3 id="1-power-supply-enhancement">1. Power Supply Enhancement</h3>
 <p><strong>Current Approach:</strong> Linear voltage regulator
 <strong>Proposed Change:</strong> Switching regulator (buck converter)<br>
-<strong>Rationale:</strong> The current linear regulator wastes significant power as heat when converting higher input voltages. A switching regulator would improve efficiency from approximately 60% to 90%, reducing thermal stress and extending battery life in portable applications.</p>
+<strong>Rationale:</strong> The current linear regulator wastes significant power as heat when converting higher input 
+voltages. A switching regulator would improve efficiency from approximately 60% to 90%, reducing thermal 
+stress and extending battery life in portable applications.</p>
 <h3 id="2-signal-chain-optimization">2. Signal Chain Optimization</h3>
 <p><strong>Current Approach:</strong> Non-inverting amplifier<br>
 <strong>Proposed Change:</strong> Digitally-controlled gain stage using digital potentiometer<br>
-<strong>Rationale:</strong> The photoresistor's logarithmic response requires different amplification across lighting conditions. Programmable gain allows field calibration and adaptive sensitivity without component changes.</p>
+<strong>Rationale:</strong> The photoresistor's logarithmic response requires different amplification across lighting 
+conditions. Programmable gain allows field calibration and adaptive sensitivity without component changes.</p>
 <h3 id="3-output-protection">3. Output Protection</h3>
 <p><strong>Current Approach:</strong> Direct microcontroller pin to external subsystem<br>
 <strong>Proposed Change:</strong> Optocoupler isolation with TVS diode protection<br>
-<strong>Rationale:</strong> Motor-driven blinds can generate voltage spikes and back-EMF. Isolation protects the microcontroller from electrical transients, increasing system reliability in real-world installations.</p>
+<strong>Rationale:</strong> Motor-driven blinds can generate voltage spikes and back-EMF. Isolation protects the 
+microcontroller from electrical transients, increasing system reliability in real-world installations.</p>
 <h3 id="4-diagnostic-capabilities">4. Diagnostic Capabilities</h3>
 <p><strong>Current Approach:</strong> Basic LED and tactile button<br>
 <strong>Proposed Change:</strong> UART serial interface with USB connectivity<br>
-<strong>Rationale:</strong> While the current debug interface provides basic functionality, a serial interface would enable detailed data logging, remote configuration, and firmware updates without physical access to the programming header.</p>
+<strong>Rationale:</strong> While the current debug interface provides basic functionality, a serial interface would 
+enable detailed data logging, remote configuration, and firmware updates without physical access to the 
+programming header.</p>
 <h3 id="5-sensor-system-upgrade">5. Sensor System Upgrade</h3>
 <p><strong>Current Approach:</strong> Single PDV-P8103 photoresistor<br>
 <strong>Proposed Change:</strong> Hybrid sensor array with photodiode for fast response<br>
-<strong>Rationale:</strong> Photoresistors have relatively slow response times (milliseconds). Adding a photodiode enables detection of rapid light changes, while maintaining the photoresistor for overall ambient light measurement.</p>
+<strong>Rationale:</strong> Photoresistors have relatively slow response times (milliseconds). Adding a photodiode 
+enables detection of rapid light changes, while maintaining the photoresistor for overall ambient light 
+measurement.</p>
 <h2 id="technical-considerations">Technical Considerations</h2>
 <h3 id="cost-implications">Cost Implications</h3>
 <p>Total estimated BOM increase: $5-8 per unit
