@@ -1,7 +1,9 @@
 # Micro-Controller Code: LIGHTSENSOR
 
 ## Overview
-This embedded C program implements the core logic for a light-sensitive blinds control system on a PIC18F57Q43 microcontroller. It continuously reads analog voltage from a photoresistor, compares the value against a preset threshold, and sends a corresponding digital signal to an external motor controller. The firmware supports both automatic light-based operation and a manual debug mode—toggled by a tactile button—with visual feedback provided through an LED. Designed for reliability and real-time responsiveness, the code integrates ADC readings, state management, and heartbeat monitoring within a simple, maintainable loop. For futher details refer to the [Resources](https://dcalde11.github.io/08-Resources/resources/) page.
+This embedded C program implements the core logic for a light-sensitive blinds control system on a PIC18F57Q43 microcontroller. It continuously reads analog voltage from a photoresistor, compares the value against a preset threshold, 
+and sends a corresponding digital signal to an external motor controller. The firmware supports both automatic light-based operation and a manual debug mode—toggled by a tactile button—with visual feedback provided through an LED. 
+Designed for reliability and real-time responsiveness, the code integrates ADC readings, state management, and heartbeat monitoring within a simple, maintainable loop. For futher details refer to the [Resources](https://dcalde11.github.io/08-Resources/resources/) page.
 ```c
 /*
  * MAIN Generated Driver File
