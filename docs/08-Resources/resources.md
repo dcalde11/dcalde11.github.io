@@ -1,4 +1,4 @@
-# MPLab Project Documentation - LIGHTSENSOR
+#  Resources MPLab Project Documentation - LIGHTSENSOR
 
 ## 1. Project Overview & Objectives - LIGHTSENSOR
 
