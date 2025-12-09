@@ -32,4 +32,4 @@ risking overload or instability. This ensures the subsystem remains efficient, s
 
 ## Resouces
 
-The power budget as a PDF download is available [*here*](http://digil.ink/l/36146ZBstB), and a Microsoft Excel Sheet [*here*](https://github.com/dcalde11/dcalde11.github.io/blob/main/Power%20Budget%202.xlsx).
+The power budget as a PDF download is available [*here*](https://github.com/dcalde11/dcalde11.github.io/blob/25a781d36a3f4f8051495a36dafa7b683a6a418b/docs/05-Power-Budget/Light%20Sensor%20Subsystem%20Power%20Budget.pdf), and a Microsoft Excel Sheet [*here*](https://github.com/dcalde11/dcalde11.github.io/blob/main/Power%20Budget%202.xlsx).
