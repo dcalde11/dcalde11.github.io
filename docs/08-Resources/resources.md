@@ -72,4 +72,4 @@ This document details the implementation of the **Light Sensor Subsystem (LIGHTS
 **STATUS: PRODUCTION READY**
 
 
-Below is the file for the main code that was used in programming the system [*Light-Subsystem*](https://github.com/dcalde11/dcalde11.github.io/blob/2a0318d0db4d65a3e27d15a51a7affd6935ff5d5/docs/08-Resources/mcc_files.zip)
+Below is the file for entire project [*Light-Subsystem*](https://github.com/dcalde11/dcalde11.github.io/blob/2a0318d0db4d65a3e27d15a51a7affd6935ff5d5/docs/08-Resources/mcc_files.zip)
