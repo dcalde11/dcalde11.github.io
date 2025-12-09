@@ -89,6 +89,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#final-component-selection-summary" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -547,6 +552,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Component Selection Example
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -557,6 +575,76 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#selection-rationale-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selection Rationale Summary
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Selection Rationale Summary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#photoresistor-pdv-p8103" class="md-nav__link">
+    <span class="md-ellipsis">
+      Photoresistor (PDV-P8103)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#op-amp-mcp6004-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Op-Amp (MCP6004-I/P)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microcontroller-pic18f57q43" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microcontroller (PIC18F57Q43)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Benefits
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -873,6 +961,67 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#selection-rationale-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selection Rationale Summary
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Selection Rationale Summary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#photoresistor-pdv-p8103" class="md-nav__link">
+    <span class="md-ellipsis">
+      Photoresistor (PDV-P8103)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#op-amp-mcp6004-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Op-Amp (MCP6004-I/P)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microcontroller-pic18f57q43" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microcontroller (PIC18F57Q43)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Benefits
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -894,8 +1043,6 @@
   
   
 
-
-  <h1>Component Selection Example</h1>
 
 <blockquote>
 <p>Also acceptable, more markdown friendly</p>
@@ -1104,7 +1251,80 @@
 </tbody>
 </table>
 <p><strong>Choice:</strong> 1. MCP6004-I/P IC OPAMP GP 4 CIRCUIT 14DIP</p>
-<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This allows for amplifying the difference of input voltage created by the PDV-P8103 CDS PHOTORESISTOR 16-33KOHM. By amplifying the difference the pic can read the levels and once surpassing a threshold or certain levels it sets the blind to pre determined positions </p>
+<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order 
+to interface with the PSoC. This allows for amplifying the difference of input voltage created by the PDV-
+P8103 CDS PHOTORESISTOR 16-33KOHM. By amplifying the difference the pic can read the levels and once 
+surpassing a threshold or certain levels it sets the blind to pre determined positions </p>
+<h1 id="final-component-selection-summary"><strong>Final Component Selection Summary</strong></h1>
+<table>
+<thead>
+<tr>
+<th>Component Category</th>
+<th>Selected Part</th>
+<th>Manufacturer</th>
+<th>Key Specifications</th>
+<th>Unit Price</th>
+<th>Justification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Light Sensor</strong></td>
+<td>PDV-P8103 CDS Photoresistor</td>
+<td>Advanced Photonix</td>
+<td>16–33 kΩ range, through-hole</td>
+<td>$0.70</td>
+<td>Inexpensive, class-proven, compatible with PSoC, easy installation</td>
+</tr>
+<tr>
+<td><strong>Operational Amplifier</strong></td>
+<td>MCP6004-I/P</td>
+<td>Microchip Technology</td>
+<td>Quad op-amp, rail-to-rail, 14-DIP</td>
+<td>$0.59</td>
+<td>Low-cost, familiar from lab use, four circuits, simple interface</td>
+</tr>
+<tr>
+<td><strong>Microcontroller</strong></td>
+<td>PIC18F57Q43</td>
+<td>Microchip Technology</td>
+<td>8-bit, integrated ADC, 64-pin TQFP</td>
+<td>—</td>
+<td>Provided in-class, capable ADC for sensor input, familiar development environment</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="selection-rationale-summary"><strong>Selection Rationale Summary</strong></h2>
+<h3 id="photoresistor-pdv-p8103"><strong>Photoresistor (PDV-P8103)</strong></h3>
+<ul>
+<li>Provides reliable ambient light sensing with variable resistance output</li>
+<li>Already used in coursework, reducing learning curve and validation time</li>
+<li>Cost-effective at $0.70 per unit with straightforward through-hole mounting</li>
+</ul>
+<h3 id="op-amp-mcp6004-ip"><strong>Op-Amp (MCP6004-I/P)</strong></h3>
+<ul>
+<li>Amplifies small photoresistor signals for robust ADC conversion</li>
+<li>Rail-to-rail operation ensures full signal swing at low voltages</li>
+<li>Quad configuration allows unused sections to be properly terminated</li>
+<li>Prior classroom experience enables a strong foundation for implementation</li>
+</ul>
+<h3 id="microcontroller-pic18f57q43"><strong>Microcontroller (PIC18F57Q43)</strong></h3>
+<ul>
+<li>Integrated 12-bit ADC directly reads amplified sensor signals</li>
+<li>Sufficient I/O for sensor interface, debug controls, and external communication</li>
+<li>Supported by in-class development tools and libraries</li>
+</ul>
+<hr>
+<h2 id="system-benefits"><strong>System Benefits</strong></h2>
+<ol>
+<li><strong>Reduced Risk</strong>: All major active components have been validated in previous lab sessions</li>
+<li><strong>Cost Efficiency</strong>: Total active component cost under $2.00 per unit (excluding microcontroller)</li>
+<li><strong>Design Continuity</strong>: Familiar components accelerate prototyping and debugging</li>
+<li><strong>Performance</strong>: Adequate signal chain from sensing to processing to output control</li>
+</ol>
+<hr>
+<p><em>Note: Passive components (resistors, capacitors, potentiometers, connectors) and supporting circuitry are specified in the full schematic but omitted from this summary as requested.</em></p>
 
 
 
